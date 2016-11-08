@@ -22,7 +22,7 @@ while t > 0:  # set up said infinite loop
 	now = datetime.datetime.now() #sets datetime with system
 	current_hour = now.hour #takes hours from the now var  (Maybe change from 24 hour time)
 	current_min = now.minute #takes mins from the now var
-	word_to_print = random.choice(open("words.txt", encoding = "ISO-8859-1").readlines()) # random line from the file, this is the word
+	word_to_print = random.choice(open("words.txt", encoding = "ISO-8859-1").readlines()) # random line from the file, this is the word, bird is the word? ;)
 	f ="\n"+''.join(["http://www.thefreedictionary.com/",word_to_print]) # Create this as a var so the api.update_status does not break, due to the [] "\n"+''.join adds the following things together.
 	api.update_status(status=word_to_print + f + "#Learn #Words #Dictionary"  ) # updates the status using the information from the variables
 	print ("Tweet sent at",current_hour, ":", current_min) #prints me the time, so i know the tweets are being sent

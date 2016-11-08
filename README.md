@@ -6,6 +6,7 @@ Simple Twitter bot, tweets random words from the English dictionary with a link 
 # Requierments 
 Python version 3.3+
 Windows, MacOS, Linux
+Libraries - Tweepy
 
 # Instructions
 To use this bot you must first place both ranword.py & wordkeys.py in the same folder, following this you need to enter your
